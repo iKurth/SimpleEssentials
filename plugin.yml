@@ -1,0 +1,22 @@
+name: SimpleEssentials
+main: Kurth\Essentials
+api: [4.0.0]
+version: 1.0.0
+author: Kurth
+permissions:
+ autofeed.use.cmd:
+  default: op
+ broadcast.use.cmd:
+  default: op
+ clearentities.use.cmd:
+  default: op
+ fly.use.cmd:
+  default: op
+ fix.use.cmd:
+  default: op
+ itemid.use.cmd:
+  default: op
+ rename.use.cmd:
+  default: op
+ staffchat.use.cmd:
+  default: op
