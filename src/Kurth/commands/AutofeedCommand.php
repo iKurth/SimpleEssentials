@@ -11,7 +11,7 @@ use Kurth\Essentials;
 
 class AutofeedCommand extends Command {
 
-    private Essentials $plugin;
+    public Essentials $plugin;
 
     public function __construct(Essentials $plugin) {
         parent::__construct("autofeed", "regenerates the food bar automatically");

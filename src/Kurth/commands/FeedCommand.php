@@ -11,7 +11,7 @@ use Kurth\Essentials;
 
 class FeedCommand extends Command {
 
-    private Essentials $plugin;
+    public Essentials $plugin;
 
     public function __construct(Essentials $plugin) {
         parent::__construct("feed", "regenerate food bar to the maximum");

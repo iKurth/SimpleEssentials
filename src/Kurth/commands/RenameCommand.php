@@ -17,7 +17,7 @@ use Kurth\Essentials;
 
 class RenameCommand extends Command {
 
-    private Essentials $plugin;
+    public Essentials $plugin;
 
     public function __construct(Essentials $plugin) {
         parent::__construct("rename", "rename your tools");
@@ -59,5 +59,6 @@ class RenameCommand extends Command {
                 $sender->sendMessage(TextFormat::colorize("&6Rename &8» &fname of the item in hand has been changed"));
             }
         }
+        return;
     }
 }

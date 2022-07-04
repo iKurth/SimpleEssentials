@@ -11,7 +11,7 @@ use Kurth\Essentials;
 
 class SpawnCommand extends Command {
 
-    private Essentials $plugin;
+    public Essentials $plugin;
 
     public function __construct(Essentials $plugin) {
         parent::__construct("spawn", "return to spawn");
@@ -28,5 +28,6 @@ class SpawnCommand extends Command {
             $sender->teleport($spawn);
             $sender->sendMessage(TextFormat::colorize("&eSpawn &8» &fyou have returned to spawn"));
         }
+        return;
     }
 }

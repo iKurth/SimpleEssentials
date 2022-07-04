@@ -11,7 +11,7 @@ use Kurth\Essentials;
 
 class BroadcastCommand extends Command {
 
-    private Essentials $plugin;
+    public Essentials $plugin;
 
     public function __construct(Essentials $plugin) {
         parent::__construct("broadcast", "send global messages on the server");

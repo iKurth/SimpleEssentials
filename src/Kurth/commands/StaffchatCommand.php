@@ -11,7 +11,7 @@ use Kurth\Essentials;
 
 class StaffchatCommand extends Command {
 
-    private Essentials $plugin;
+    public Essentials $plugin;
 
     public function __construct(Essentials $plugin) {
         parent::__construct("staffchat", "send private messages for staffs");
@@ -38,5 +38,6 @@ class StaffchatCommand extends Command {
                 $players->sendMessage(TextFormat::colorize("&cStaffChat &8» &f{$sender->getName()}: &7").implode(" ", $args));
             }
         }
+        return;
     }
 }

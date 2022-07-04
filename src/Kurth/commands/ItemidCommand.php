@@ -11,7 +11,7 @@ use Kurth\Essentials;
 
 class ItemidCommand extends Command {
 
-    private Essentials $plugin;
+    public Essentials $plugin;
 
     public function __construct(Essentials $plugin) {
         parent::__construct("itemid", "show id and meta of the items & blocks");

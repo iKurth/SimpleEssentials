@@ -13,7 +13,7 @@ use Kurth\Essentials;
 
 class ClearentitiesCommand extends Command {
 
-    private Essentials $plugin;
+    public Essentials $plugin;
 
     public function __construct(Essentials $plugin) {
         parent::__construct("clearentities", "remove all entities from the server");
@@ -35,7 +35,7 @@ class ClearentitiesCommand extends Command {
 
         foreach ($this->plugin->getServer()->getWorldManager()->getWorlds() as $world) {
             foreach ($world->getEntities() as $entities) {
-                if ($entities instanceof ItemEntity && $entities instanceof ExperienceOrb) {
+                if ($entities instanceof ItemEntity || $entities instanceof ExperienceOrb) {
                     $entities->flagForDespawn();
                 }
             }

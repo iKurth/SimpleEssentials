@@ -12,7 +12,7 @@ use Kurth\Essentials;
 
 class GamemodeCommand extends Command {
 
-    private Essentials $plugin;
+    public Essentials $plugin;
 
     public function __construct(Essentials $plugin) {
         parent::__construct("gm", "change your gamemode easily");

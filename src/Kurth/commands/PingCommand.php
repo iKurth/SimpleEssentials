@@ -11,7 +11,7 @@ use Kurth\Essentials;
 
 class PingCommand extends Command {
 
-    private Essentials $plugin;
+    public Essentials $plugin;
 
     public function __construct(Essentials $plugin) {
         parent::__construct("ping", "check your latency in the server");
@@ -27,5 +27,6 @@ class PingCommand extends Command {
             $ping = $sender->getNetworkSession()->getPing();
             $sender->sendMessage(TextFormat::colorize("&ePing &8» &fyour ping is: &e").$ping);
         }
+        return;
     }
 }

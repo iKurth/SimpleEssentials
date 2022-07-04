@@ -18,7 +18,7 @@ use Kurth\Essentials;
 
 class FixCommand extends Command {
 
-    private Essentials $plugin;
+    public Essentials $plugin;
 
     public function __construct(Essentials $plugin) {
         parent::__construct("fix", "repair your tools and armor");

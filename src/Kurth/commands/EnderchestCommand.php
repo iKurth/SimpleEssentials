@@ -15,7 +15,7 @@ use muqsit\invmenu\type\InvMenuTypeIds;
 
 class EnderchestCommand extends Command {
 
-    private Essentials $plugin;
+    public Essentials $plugin;
 
     public function __construct(Essentials $plugin) {
         parent::__construct("enderchest", "open your portable enderchest");
@@ -48,5 +48,6 @@ class EnderchestCommand extends Command {
             return $transaction->continue();
         });
         $menu->send($player);
+        return;
     }
 }
