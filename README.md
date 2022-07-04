@@ -1,6 +1,6 @@
 # SimpleEssentials
 
-📖 Features:
+# 📖 Features:
 
 - /autofeed (autoregen food bar)
 - /broadcast (send global messages)
@@ -17,7 +17,7 @@
 - /spawn (return to spawn)
 - /staffchat (chat private for staffs)
 
-🏷 Permissions:
+# 🏷 Permissions:
 
 - autofeed.use.cmd
 - broadcast.use.cmd
@@ -28,12 +28,12 @@
 - rename.use.cmd
 - staffchat.use.cmd
 
-📢 Community's
+# 📢 Community's
 
 - MegaHost: https://discord.gg/megahosting
 - HyperDevs: https://discord.gg/xPK9wXK5jA
 
-📱 Social networks:
+# 📱 Social networks:
 
 - Discord: Kurth#2471
 - YouTube: https://www.youtube.com/channel/UC97s6Bylhyjb2k05LkzeGZQ
