@@ -10,9 +10,13 @@ permissions:
   default: op
  clearentities.use.cmd:
   default: op
+ enderchest.use.cmd:
+  default: op
  fly.use.cmd:
   default: op
  fix.use.cmd:
+  default: op
+ gm.use.cmd:
   default: op
  itemid.use.cmd:
   default: op
