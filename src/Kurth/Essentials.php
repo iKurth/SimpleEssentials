@@ -23,6 +23,8 @@ use Kurth\commands\RenameCommand;
 use Kurth\commands\SpawnCommand;
 use Kurth\commands\StaffchatCommand;
 
+use muqsit\invmenu\InvMenuHandler;
+
 class Essentials extends PluginBase implements Listener {
 
     public $autofeed = [];
@@ -67,6 +69,10 @@ class Essentials extends PluginBase implements Listener {
                 }
             }
         }), 0 * 20);
+
+        if (!InvMenuHandler::isRegistered()) {
+            InvMenuHandler::register($this);
+        }
     }
 
     public function onItem(PlayerItemHeldEvent $event) : void {

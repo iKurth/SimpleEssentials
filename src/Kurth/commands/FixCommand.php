@@ -58,7 +58,7 @@ class FixCommand extends Command {
                 $sender->sendMessage(TextFormat::colorize("&6Fix &8» &fall inventory items (including armor) have been repaired"));
                 foreach ($sender->getInventory()->getContents() as $index => $item) {
                     if ($item instanceof Sword || $item instanceof Pickaxe || $item instanceof Axe || $item instanceof Shovel || $item instanceof Hoe || $item instanceof Bow || $item instanceof Armor) {
-                        if ($item->getMeta() > 0) {
+                        if ($item->getDamage() > 0) {
                             $sender->getInventory()->setItem($index, $item->setDamage(0));
                         }
                     }
@@ -66,7 +66,7 @@ class FixCommand extends Command {
 
                 foreach ($sender->getArmorInventory()->getContents() as $index => $item) {
                     if ($item instanceof Armor) {
-                        if ($item->getMeta() > 0) {
+                        if ($item->getDamage() > 0) {
                             $sender->getArmorInventory()->setItem($index, $item->setDamage(0));
                         }
                     }
